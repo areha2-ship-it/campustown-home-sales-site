@@ -1,31 +1,56 @@
 <!DOCTYPE html>
-<!-- A placeholder from the Home Sales template. Replace this file with your site's first page. -->
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Under construction</title>
-  <!-- An empty icon, so the browser doesn't log an error looking for favicon.ico -->
-  <link rel="icon" href="data:,">
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      max-width: 40rem;
-      margin: 0 auto;
-      padding: 3rem 1rem;
-      font-family: system-ui, sans-serif;
-      line-height: 1.5;
-    }
-    footer { margin-top: 3rem; font-size: 0.875rem; opacity: 0.75; }
-  </style>
-</head>
-<body>
-  <main>
-    <h1>This site is under construction</h1>
-    <p>It will show findings from the College-town home sales dataset.</p>
-  </main>
-  <footer>
-    <p>Data: College-town home sales dataset, version 1.0 (2026). University of Illinois-Deloitte Foundation Center for Business Emerging Technologies. Data collected March 2026.</p>
-  </footer>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campustown Home Sales</title><link rel="icon" href="data:,">
+<style>
+:root { color-scheme: light dark; } body { max-width: 68rem; margin: 0 auto; padding: 2rem 1rem; font: 1rem/1.5 system-ui,sans-serif; }
+.chart { display:grid; gap:.5rem; margin:2rem 0; } .row { display:grid; grid-template-columns:10rem 1fr 7rem; gap:.75rem; align-items:center; }
+.track { height:1rem; background:#8883; } .track i { display:block; height:100%; background:#2c6b62; } strong, td:last-child { text-align:right; font-variant-numeric:tabular-nums; }
+table { width:100%; border-collapse:collapse; } th,td { padding:.5rem; border-bottom:1px solid #8886; text-align:left; } th:last-child {text-align:right}
+@media(max-width:38rem) { .row {grid-template-columns:7rem 1fr 6rem;gap:.35rem;font-size:.85rem} }
+</style></head><body><main><h1>Median home sale prices in college towns</h1>
+<p>City medians for completed sales of $1,000 or more, rounded to whole dollars.</p>
+<div class="chart" role="img" aria-label="Median sale prices by city, lowest to highest">
+<!-- Begin chart rows -->
+<div class="row"><span>Urbana, IL</span><span class="track"><i style="width:25.9%"></i></span><strong>$229,900</strong></div>
+<div class="row"><span>Champaign, IL</span><span class="track"><i style="width:27.0%"></i></span><strong>$240,000</strong></div>
+<div class="row"><span>Lafayette, IN</span><span class="track"><i style="width:29.2%"></i></span><strong>$260,000</strong></div>
+<div class="row"><span>Iowa City, IA</span><span class="track"><i style="width:38.5%"></i></span><strong>$342,000</strong></div>
+<div class="row"><span>Gainesville, FL</span><span class="track"><i style="width:39.4%"></i></span><strong>$350,000</strong></div>
+<div class="row"><span>Athens, GA</span><span class="track"><i style="width:41.6%"></i></span><strong>$370,000</strong></div>
+<div class="row"><span>West Lafayette, IN</span><span class="track"><i style="width:42.7%"></i></span><strong>$379,900</strong></div>
+<div class="row"><span>Savoy, IL</span><span class="track"><i style="width:45.3%"></i></span><strong>$402,700</strong></div>
+<div class="row"><span>Madison, WI</span><span class="track"><i style="width:47.4%"></i></span><strong>$421,000</strong></div>
+<div class="row"><span>State College, PA</span><span class="track"><i style="width:48.4%"></i></span><strong>$430,000</strong></div>
+<div class="row"><span>Newberry, FL</span><span class="track"><i style="width:49.5%"></i></span><strong>$439,995</strong></div>
+<div class="row"><span>Ann Arbor, MI</span><span class="track"><i style="width:64.2%"></i></span><strong>$571,000</strong></div>
+<div class="row"><span>Carrboro, NC</span><span class="track"><i style="width:67.6%"></i></span><strong>$601,250</strong></div>
+<div class="row"><span>Middleton, WI</span><span class="track"><i style="width:68.7%"></i></span><strong>$611,000</strong></div>
+<div class="row"><span>Charlottesville, VA</span><span class="track"><i style="width:69.2%"></i></span><strong>$615,000</strong></div>
+<div class="row"><span>Chapel Hill, NC</span><span class="track"><i style="width:82.7%"></i></span><strong>$735,000</strong></div>
+<div class="row"><span>Pittsboro, NC</span><span class="track"><i style="width:98.6%"></i></span><strong>$876,986</strong></div>
+<div class="row"><span>Davis, CA</span><span class="track"><i style="width:100.0%"></i></span><strong>$889,000</strong></div>
+<!-- End chart rows -->
+</div>
+<h2>Median sale prices by city</h2><table><thead><tr><th>City</th><th>Median sale price</th></tr></thead><tbody>
+<!-- Begin table rows -->
+<tr><td>Urbana, IL</td><td>$229,900</td></tr>
+<tr><td>Champaign, IL</td><td>$240,000</td></tr>
+<tr><td>Lafayette, IN</td><td>$260,000</td></tr>
+<tr><td>Iowa City, IA</td><td>$342,000</td></tr>
+<tr><td>Gainesville, FL</td><td>$350,000</td></tr>
+<tr><td>Athens, GA</td><td>$370,000</td></tr>
+<tr><td>West Lafayette, IN</td><td>$379,900</td></tr>
+<tr><td>Savoy, IL</td><td>$402,700</td></tr>
+<tr><td>Madison, WI</td><td>$421,000</td></tr>
+<tr><td>State College, PA</td><td>$430,000</td></tr>
+<tr><td>Newberry, FL</td><td>$439,995</td></tr>
+<tr><td>Ann Arbor, MI</td><td>$571,000</td></tr>
+<tr><td>Carrboro, NC</td><td>$601,250</td></tr>
+<tr><td>Middleton, WI</td><td>$611,000</td></tr>
+<tr><td>Charlottesville, VA</td><td>$615,000</td></tr>
+<tr><td>Chapel Hill, NC</td><td>$735,000</td></tr>
+<tr><td>Pittsboro, NC</td><td>$876,986</td></tr>
+<tr><td>Davis, CA</td><td>$889,000</td></tr>
+<!-- End table rows -->
+</tbody></table>
+</main><footer><p>Data: College-town home sales dataset, version 1.0 (2026). University of Illinois-Deloitte Foundation Center for Business Emerging Technologies. Data collected March 2026.</p></footer></body></html>
