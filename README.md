@@ -36,7 +36,7 @@ https://your-username.github.io/your-repo-name/
 
 ## Data notes
 
-_Replace this line. Say which rows you left out and why, and how each figure on the site is defined. "Five things that will bite you" in the description sheet lists the problems to cover._
+The chart and table group completed sales by city and state and exclude prices below $1,000. Medians are rounded to the nearest dollar, with half dollars rounded up. To regenerate the chart and table from the original CSV, run `python3 scripts/update_median_prices.py` from the repository root.
 
 ## Tools we used
 
